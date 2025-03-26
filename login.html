@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigninPage</title>
+</head>
+<style>
+    .signin
+    {
+        height: 500px;
+        width: 500px;
+        background-color:pink;
+        padding: auto;
+        margin: auto;
+        margin-top: 100px;
+        border: 2px solid pink;
+        border-radius: 10px;
+    }
+    #left
+    {
+        /* background-color:lightgreen; */
+        height: 400px;
+        width: 400px;
+        margin-left: 100px;
+        
+        padding-top: 100px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    input{
+        /* margin-top: 5px; */
+        border: none;
+        background-color: lightgray;
+        height: 30px;
+        width: 250px;
+    }
+    #right
+    {
+        height: 400px; 
+        padding-left: 130px;
+        padding-top: 100px;
+
+        /* width: 400px; */
+    }
+    .float
+    {
+        width: 50%;
+        float: left;
+        margin-top: 100px;
+        color: black;
+        
+        
+
+    }
+    #signin
+    {
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        width: 100px;
+        height: 40px;
+        background-color:lightgreen;
+        /* margin-top: 10px; */
+        margin-left: 10px;
+    }
+    
+</style>
+<script>
+
+    function validate()
+    {
+        var em=document.getElementById("email").value
+        var pa_ss=document.getElementById("password").value
+        
+        if(em=='rohitvkharade@gmail.com' && pa_ss==1234)
+        {
+           alert("login successfully")
+        }
+        else
+        {
+            alert("invalid credential")
+        }
+       
+
+
+    }
+</script>
+<body >
+    <div >
+        <div class="float" id="left">
+            <img src="logo.jpg">
+            
+        </div>
+        <div class="float" id="right">
+            <h1>Login In</h1>
+            <div class="inputs">
+                <form action="#" style="padding: 5px; margin-top: 5px;" >
+                    <label>
+                        Email:
+                        <br>
+                        <input  type="text" placeholder="rohit@gmail.com" id="email">
+                    </label>
+                    <br>
+                    <br>
+                    <label >
+                        Password:
+                        <br>
+                        <input  type="password" placeholder="Enter your password" id="password">
+                    </label>
+                    <h6 style="margin-left: 100px;">forgot password?</h6>
+                    <input  id="signin" type="submit" value="Login" onclick="validate()">
+                    <button id="signin" onclick="location.href='signup.html'">Sign Up</button>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+       
+</body>
+</html>
